@@ -35,10 +35,6 @@ Server: Apache (XAMPP atau sejenis)
 
 Tools: phpMyAdmin untuk pengelolaan database
 
-📁 Struktur Folder
-bash
-Copy
-Edit
 cv_creator/
 │
 ├── index.php            # Halaman utama: daftar CV
@@ -51,12 +47,8 @@ cv_creator/
 ├── pdf.php              # (opsional) generate PDF
 ├── assets/              # Folder gambar, foto profil, dll
 │   └── uploads/         # Tempat menyimpan foto profil
-🧾 Struktur Database
-Nama database: cv_creator
 
-sql
-Copy
-Edit
+
 CREATE DATABASE cv_creator;
 USE cv_creator;
 
@@ -78,6 +70,8 @@ CREATE TABLE experience (
     description TEXT,
     FOREIGN KEY (cv_id) REFERENCES cv(id)
 );
+
+
 🖼️ Contoh Tampilan
 (Screenshot akan dimasukkan oleh pemilik repositori di bagian ini)
 
