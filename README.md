@@ -1,5 +1,5 @@
 📄 cv_creator – Tugas 10
-Aplikasi web sederhana berbasis PHP dan MySQL untuk mengelola data CV (Curriculum Vitae) dan pengalaman kerja. Aplikasi ini merupakan implementasi tugas akhir mata kuliah Pemrograman Web (Tugas 10) dengan fitur CRUD (Create, Read, Update, Delete) lengkap, tampilan user-friendly, dan desain modern.
+Aplikasi web sederhana berbasis PHP dan MySQL untuk mengelola data CV (Curriculum Vitae) dan pengalaman kerja. Aplikasi ini merupakan implementasi tugas akhir mata kuliah Pemrograman Web (Tugas 10) dengan fitur CRUD (Create, Read, Update, Delete) lengkap, tampilan user-friendly.
 
 👨‍🎓 Dibuat Oleh
 Nama: Dhafin Kurniawan
@@ -80,7 +80,12 @@ CREATE TABLE experience (
 
 
 🖼️ Contoh Tampilan
-(Screenshot akan dimasukkan oleh pemilik repositori di bagian ini)
+![image](https://github.com/user-attachments/assets/e0fa32cc-f980-4b5c-8b5e-e84eb08b78a2)
+![image](https://github.com/user-attachments/assets/154eaa68-a795-4a2e-929c-ac040ab8c947)
+![image](https://github.com/user-attachments/assets/1b83410d-49bb-4fc1-8afd-d5ad53e545e7)
+
+
+
 
 📌 Cara Menjalankan
 Clone repositori ini atau download dalam bentuk .zip
