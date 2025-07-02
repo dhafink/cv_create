@@ -31,45 +31,52 @@ Database: MySQL
 
 Tampilan UI: HTML, CSS (custom)
 
-Server: Apache (XAMPP atau sejenis)
+## Tools
 
-Tools: phpMyAdmin untuk pengelolaan database
+- **phpMyAdmin** untuk pengelolaan database
+- **XAMPP** untuk menjalankan server lokal (Apache + MySQL)
 
+## Struktur Folder
+
+```
 cv_creator/
-│
-├── index.php            # Halaman utama: daftar CV
-├── add.php              # Form tambah data CV
-├── edit.php             # Form edit data CV
-├── delete.php           # Hapus CV
-├── view.php             # Lihat detail CV + pengalaman kerja
-├── process.php          # Proses tambah & edit data
-├── config.php           # Koneksi ke database
-├── pdf.php              # (opsional) generate PDF
-├── assets/              # Folder gambar, foto profil, dll
-│   └── uploads/         # Tempat menyimpan foto profil
+├── index.php        # Halaman utama: daftar CV
+├── add.php          # Form tambah data CV
+├── edit.php         # Form edit data CV
+├── delete.php       # Hapus CV
+├── view.php         # Lihat detail CV + pengalaman kerja
+├── process.php      # Proses tambah & edit data
+├── config.php       # Koneksi ke database
+├── pdf.php          # (Opsional) Generate PDF
+├── assets/          # Folder gambar, foto profil, dll
+│   └── uploads/     # Tempat menyimpan foto profil
+```
 
+## Struktur Database
 
+```sql
 CREATE DATABASE cv_creator;
 USE cv_creator;
 
 CREATE TABLE cv (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    phone VARCHAR(15),
-    address TEXT,
-    profile_photo VARCHAR(255)
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(15),
+  address TEXT,
+  profile_photo VARCHAR(255)
 );
 
 CREATE TABLE experience (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    cv_id INT,
-    position VARCHAR(100),
-    company VARCHAR(100),
-    duration VARCHAR(100),
-    description TEXT,
-    FOREIGN KEY (cv_id) REFERENCES cv(id)
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  cv_id INT,
+  position VARCHAR(100),
+  company VARCHAR(100),
+  duration VARCHAR(100),
+  description TEXT,
+  FOREIGN KEY (cv_id) REFERENCES cv(id)
 );
+```
 
 
 🖼️ Contoh Tampilan
